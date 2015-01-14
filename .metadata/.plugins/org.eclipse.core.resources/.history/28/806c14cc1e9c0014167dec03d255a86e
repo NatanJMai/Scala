@@ -1,0 +1,8 @@
+package scala
+
+class Examples {
+  def test(a:Int): Void = {
+    println(a)
+    
+  }
+}

@@ -1,0 +1,9 @@
+package scala
+
+class Examples {
+  def test(a:Int): Int = {
+    println(a)
+    return a
+    
+  }
+}

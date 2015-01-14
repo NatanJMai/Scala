@@ -1,0 +1,476 @@
+2015-01-12 17:19:15,048  WARN [Worker-6] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:19:15,049  WARN [Worker-6] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:19:35,441  WARN [Worker-7] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:19:35,442  WARN [Worker-7] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:19:51,762  WARN [Worker-3] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:19:51,763  WARN [Worker-3] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:19:58,016  WARN [Worker-8] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:19:58,016  WARN [Worker-8] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:20:01,355 ERROR [Worker-4] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-01-12 17:20:01,355 ERROR [Worker-4] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-01-12 17:20:01,355 ERROR [Worker-4] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-01-12 17:20:10,146  WARN [Worker-6] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:20:10,147  WARN [Worker-6] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:27:59,512  WARN [Worker-10] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:27:59,512  WARN [Worker-10] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:28:03,332  WARN [Worker-13] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:28:03,332  WARN [Worker-13] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:28:08,392  WARN [Worker-12] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:28:08,393  WARN [Worker-12] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-12 17:28:30,377  WARN [Worker-10] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-12 17:28:30,377  WARN [Worker-10] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-13 15:18:49,578  WARN [main] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-13 15:18:49,607  WARN [main] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-14 16:21:06,911  WARN [main] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-14 16:21:06,941  WARN [main] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-14 16:21:27,143 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Throwable during asyncExec
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:377)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:130)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:105)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:95)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:147)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:950)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typedTreeAt(Global.scala:799)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:829)
+	at scala.tools.nsc.interactive.Global$$anonfun$getTypedTreeAt$1.apply(Global.scala:829)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:688)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:695)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.getTypedTreeAt(Global.scala:829)
+	at scala.tools.nsc.interactive.CompilerControl$AskTypeAtItem.apply$mcV$sp(CompilerControl.scala:326)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:493)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalParseProgress(Global.scala:318)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.funDefRest(Parsers.scala:2619)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.funDefOrDcl(Parsers.scala:2576)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.defOrDcl(Parsers.scala:2461)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.localDef(Parsers.scala:3084)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$blockStatSeq$1.apply(Parsers.scala:3115)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$blockStatSeq$1.apply(Parsers.scala:3102)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.checkNoEscapingPlaceholders(Parsers.scala:462)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.blockStatSeq(Parsers.scala:3102)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.block(Parsers.scala:1699)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.blockExpr(Parsers.scala:1688)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.funDefRest(Parsers.scala:2604)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.funDefOrDcl(Parsers.scala:2576)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.defOrDcl(Parsers.scala:2461)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.nonLocalDefOrDcl(Parsers.scala:2473)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStat$1$$anonfun$applyOrElse$3.apply(Parsers.scala:3030)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStat$1$$anonfun$applyOrElse$3.apply(Parsers.scala:3030)
+	at scala.tools.nsc.doc.ScaladocSyntaxAnalyzer$ScaladocUnitParser.joinComment(ScaladocAnalyzer.scala:259)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStat$1.applyOrElse(Parsers.scala:3030)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStat$1.applyOrElse(Parsers.scala:3025)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.statSeq(Parsers.scala:2957)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.templateStats(Parsers.scala:3024)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStatSeq$1.apply(Parsers.scala:3011)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$templateStatSeq$1.apply(Parsers.scala:2988)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.checkNoEscapingPlaceholders(Parsers.scala:462)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.templateStatSeq(Parsers.scala:2988)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.templateBody(Parsers.scala:2917)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.templateBodyOpt(Parsers.scala:2924)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.templateOpt(Parsers.scala:2888)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.objectDef(Parsers.scala:2773)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.tmplDef(Parsers.scala:2712)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.topLevelTmplDef(Parsers.scala:2693)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$topStat$1$$anonfun$applyOrElse$2.apply(Parsers.scala:2980)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$topStat$1$$anonfun$applyOrElse$2.apply(Parsers.scala:2980)
+	at scala.tools.nsc.doc.ScaladocSyntaxAnalyzer$ScaladocUnitParser.joinComment(ScaladocAnalyzer.scala:259)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$topStat$1.applyOrElse(Parsers.scala:2980)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$topStat$1.applyOrElse(Parsers.scala:2973)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.statSeq(Parsers.scala:2957)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.topStatSeq(Parsers.scala:2972)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$compilationUnit$1.topstats$1(Parsers.scala:3170)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$compilationUnit$1.topstats$1(Parsers.scala:3162)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$compilationUnit$1.apply(Parsers.scala:3176)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$compilationUnit$1.apply(Parsers.scala:3138)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.checkNoEscapingPlaceholders(Parsers.scala:462)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.compilationUnit(Parsers.scala:3138)
+	at scala.tools.nsc.ast.parser.Parsers$SourceFileParser$$anonfun$parseStartRule$1.apply(Parsers.scala:146)
+	at scala.tools.nsc.ast.parser.Parsers$SourceFileParser$$anonfun$parseStartRule$1.apply(Parsers.scala:146)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$parse$1.apply(Parsers.scala:352)
+	at scala.tools.nsc.ast.parser.Parsers$Parser$$anonfun$parse$1.apply(Parsers.scala:352)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.parseRule(Parsers.scala:345)
+	at scala.tools.nsc.ast.parser.Parsers$Parser.parse(Parsers.scala:352)
+	at scala.tools.nsc.ast.parser.Parsers$UnitParser.smartParse(Parsers.scala:241)
+	at scala.tools.nsc.ast.parser.SyntaxAnalyzer.scala$tools$nsc$ast$parser$SyntaxAnalyzer$$initialUnitBody(SyntaxAnalyzer.scala:87)
+	at scala.tools.nsc.ast.parser.SyntaxAnalyzer$ParserPhase.apply(SyntaxAnalyzer.scala:99)
+	at scala.tools.nsc.Global$GlobalPhase$$anonfun$applyPhase$1.apply$mcV$sp(Global.scala:428)
+	at scala.tools.nsc.Global$GlobalPhase.withCurrentUnit(Global.scala:419)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:428)
+	at scala.tools.nsc.Global$Run$$anonfun$compileLate$2$$anonfun$apply$1.apply(Global.scala:1445)
+	at scala.tools.nsc.Global$Run$$anonfun$compileLate$2$$anonfun$apply$1.apply(Global.scala:1445)
+	at scala.reflect.internal.SymbolTable.enteringPhase(SymbolTable.scala:235)
+	at scala.tools.nsc.Global$Run$$anonfun$compileLate$2.apply(Global.scala:1445)
+	at scala.tools.nsc.Global$Run$$anonfun$compileLate$2.apply(Global.scala:1444)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:743)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1195)
+	at scala.tools.nsc.Global$Run.compileLate(Global.scala:1444)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$parseAndEnter(Global.scala:645)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:551)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2015-01-14 16:21:27,147 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Throwable during asyncExec
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:377)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:130)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:105)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:95)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:147)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:950)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typedTreeAt(Global.scala:799)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$scopeMembers(Global.scala:1015)
+	at scala.tools.nsc.interactive.Global$$anonfun$getScopeCompletion$2.apply(Global.scala:972)
+	at scala.tools.nsc.interactive.Global$$anonfun$getScopeCompletion$2.apply(Global.scala:972)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:688)
+	at scala.tools.nsc.interactive.Global$$anonfun$respond$1.apply(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:695)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.getScopeCompletion(Global.scala:972)
+	at scala.tools.nsc.interactive.CompilerControl$AskScopeCompletionItem.apply$mcV$sp(CompilerControl.scala:350)
+	at scala.tools.nsc.interactive.Global$$anonfun$pollForWork$1.apply$mcV$sp(Global.scala:493)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.Global.checkForMoreWork(Global.scala:507)
+	at scala.tools.nsc.interactive.Global.signalDone(Global.scala:348)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5317)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5322)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5269)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5273)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedQualifier(Typers.scala:5371)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedQualifier(Typers.scala:5379)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:4915)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5211)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5258)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5295)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedInternal(Typers.scala:5322)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5269)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5273)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5347)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase$$anonfun$applyPhase$1.apply$mcV$sp(Global.scala:428)
+	at scala.tools.nsc.Global$GlobalPhase.withCurrentUnit(Global.scala:419)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:428)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1215)
+	at scala.tools.nsc.interactive.Global$TyperRun$$anonfun$applyPhase$1.apply(Global.scala:1215)
+	at scala.reflect.internal.SymbolTable.enteringPhase(SymbolTable.scala:235)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1215)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1208)
+	at scala.tools.nsc.interactive.Global.scala$tools$nsc$interactive$Global$$typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5$$anonfun$apply$8.apply(Global.scala:572)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:568)
+	at scala.tools.nsc.interactive.Global$$anonfun$backgroundCompile$5.apply(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:778)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:777)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+2015-01-14 16:22:12,523  WARN [Worker-5] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-14 16:22:12,523  WARN [Worker-5] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-14 16:23:23,610  WARN [Worker-0] - ScalaProject - Project hello-project has platform default sourceLevel.
+2015-01-14 16:23:23,611  WARN [Worker-0] - ScalaProject - Project hello-project runs on platform default installation.
+2015-01-14 16:28:02,243  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:28:02,243  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:29:03,250  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:29:03,250  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:31:06,836  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:31:06,837  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:31:43,078  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:31:43,078  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:31:49,423  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:31:49,423  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:31:56,525  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:31:56,526  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:32:36,084  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:32:36,084  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:32:56,368  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:32:56,368  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:33:13,332  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:33:13,332  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:33:23,421  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:33:23,421  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:33:33,463  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:33:33,464  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:34:12,769  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:34:12,769  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:34:35,934  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:34:35,934  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:34:58,005  WARN [Worker-10] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:34:58,005  WARN [Worker-10] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:35:04,479 ERROR [Worker-9] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-01-14 16:35:04,479 ERROR [Worker-9] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-01-14 16:35:04,479 ERROR [Worker-9] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-01-14 16:35:20,518  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:35:20,518  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:35:40,702  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:35:40,702  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:36:01,531  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:36:01,531  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:36:32,201  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:36:32,201  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:36:44,339  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:36:44,339  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:36:49,511  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:36:49,511  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:37:02,262  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:37:02,262  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:37:07,576  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:37:07,577  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:37:34,515  WARN [ModalContext] - ScalaProject - Project Example has platform default sourceLevel.
+2015-01-14 16:37:34,515  WARN [ModalContext] - ScalaProject - Project Example runs on platform default installation.
+2015-01-14 16:37:34,969  WARN [Worker-3] - ScalaProject - Project Example has platform default sourceLevel.
+2015-01-14 16:37:34,969  WARN [Worker-3] - ScalaProject - Project Example runs on platform default installation.
+2015-01-14 16:37:44,511 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
+Java Model Exception: Java Model Status [Examples does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1909)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1931)
+	at org.scalaide.core.internal.project.ClasspathManagement$class.jdkPaths(ClasspathManagement.scala:132)
+	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:136)
+	at org.scalaide.core.internal.project.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:119)
+	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:136)
+	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:481)
+	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:467)
+	at org.scalaide.core.internal.project.ScalaProject.org$scalaide$core$internal$project$ScalaProject$$prepareCompilerSettings(ScalaProject.scala:423)
+	at org.scalaide.core.internal.project.ScalaProject$$anonfun$3.apply(ScalaProject.scala:148)
+	at org.scalaide.core.internal.project.ScalaProject$$anonfun$3.apply(ScalaProject.scala:148)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:158)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:157)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:122)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:84)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:104)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:62)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:202)
+	at org.scalaide.core.internal.jdt.model.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:73)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1$$anonfun$2.apply(TextHoverFactory.scala:38)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1$$anonfun$2.apply(TextHoverFactory.scala:37)
+	at scala.Option.map(Option.scala:145)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.getHoverInfo2(TextHoverFactory.scala:37)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+2015-01-14 16:37:44,512 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error thrown while initializing the presentation compiler.
+Java Model Exception: Java Model Status [Examples does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1909)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1931)
+	at org.scalaide.core.internal.project.ClasspathManagement$class.jdkPaths(ClasspathManagement.scala:132)
+	at org.scalaide.core.internal.project.ScalaProject.jdkPaths(ScalaProject.scala:136)
+	at org.scalaide.core.internal.project.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:119)
+	at org.scalaide.core.internal.project.ScalaProject.scalaClasspath(ScalaProject.scala:136)
+	at org.scalaide.core.internal.project.ScalaProject.setupCompilerClasspath(ScalaProject.scala:481)
+	at org.scalaide.core.internal.project.ScalaProject.initializeCompilerSettings(ScalaProject.scala:467)
+	at org.scalaide.core.internal.project.ScalaProject.org$scalaide$core$internal$project$ScalaProject$$prepareCompilerSettings(ScalaProject.scala:423)
+	at org.scalaide.core.internal.project.ScalaProject$$anonfun$3.apply(ScalaProject.scala:148)
+	at org.scalaide.core.internal.project.ScalaProject$$anonfun$3.apply(ScalaProject.scala:148)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.liftedTree1$1(PresentationCompilerProxy.scala:158)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.create(PresentationCompilerProxy.scala:157)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.initialize(PresentationCompilerProxy.scala:122)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:84)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:104)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:62)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:202)
+	at org.scalaide.core.internal.jdt.model.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:73)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1.apply(ScalaHoverImpl.scala:111)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1.apply(ScalaHoverImpl.scala:109)
+	at scala.Option.map(Option.scala:145)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.getHoverInfo2(ScalaHoverImpl.scala:109)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.org$scalaide$debug$internal$editor$TextHoverFactory$$anon$$super$getHoverInfo2(TextHoverFactory.scala:53)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1$$anonfun$2$$anonfun$apply$5.apply(TextHoverFactory.scala:53)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1$$anonfun$2.apply(TextHoverFactory.scala:51)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1$$anonfun$2.apply(TextHoverFactory.scala:37)
+	at scala.Option.map(Option.scala:145)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.getHoverInfo2(TextHoverFactory.scala:37)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+2015-01-14 16:38:06,080  WARN [ModalContext] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:38:06,080  WARN [ModalContext] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:38:06,469  WARN [Worker-10] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:38:06,469  WARN [Worker-10] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:38:20,121  WARN [Worker-10] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:38:20,121  WARN [Worker-10] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:38:23,932  WARN [Worker-9] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:38:23,932  WARN [Worker-9] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:38:45,258  WARN [Worker-3] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:38:45,259  WARN [Worker-3] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:39:18,463  WARN [Worker-9] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:39:18,463  WARN [Worker-9] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:39:34,341  WARN [Worker-6] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:39:34,341  WARN [Worker-6] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:40:45,598  WARN [Worker-8] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:40:45,598  WARN [Worker-8] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:41:22,844  WARN [Worker-7] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:41:22,844  WARN [Worker-7] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:41:53,235  WARN [main] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:41:53,235  WARN [main] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:42:25,346  WARN [Worker-3] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:42:25,347  WARN [Worker-3] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:42:57,838  WARN [Worker-1] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:42:57,839  WARN [Worker-1] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:44:21,066 ERROR [Worker-3] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-01-14 16:44:21,066 ERROR [Worker-3] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-01-14 16:44:21,066 ERROR [Worker-3] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-01-14 16:44:32,904  WARN [Worker-3] - ScalaProject - Project Pratices has platform default sourceLevel.
+2015-01-14 16:44:32,904  WARN [Worker-3] - ScalaProject - Project Pratices runs on platform default installation.
+2015-01-14 16:47:22,114  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:47:22,114  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:47:57,346  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:47:57,347  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:48:03,341  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:48:03,341  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:48:14,309  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:48:14,309  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:48:31,041  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:48:31,041  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:48:48,068  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:48:48,069  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:49:11,459  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:49:11,459  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:52:32,904  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:52:32,905  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:53:04,664  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:53:04,664  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:53:40,750  WARN [Worker-0] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:53:40,750  WARN [Worker-0] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:05,439  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:05,439  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:23,087  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:23,087  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:29,958  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:29,958  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:37,167  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:37,167  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:41,631  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:41,631  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:51,110  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:51,110  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:52,349  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:52,350  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:54:57,206  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:54:57,206  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:55:02,278  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:55:02,278  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:55:12,734  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:55:12,734  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:55:23,635  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:55:23,635  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:55:36,335  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:55:36,335  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:55:47,118  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:55:47,119  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:56:27,054  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:56:27,054  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:56:36,197  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:56:36,197  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:56:42,213  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:56:42,213  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:56:44,560  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:56:44,560  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 16:56:51,563  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 16:56:51,563  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:00:16,092  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:00:16,093  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:01:46,922  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:01:46,922  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:00,241  WARN [Worker-0] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:00,241  WARN [Worker-0] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:02,725  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:02,726  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:04,099  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:04,100  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:05,491  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:05,491  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:20,905  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:20,905  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:02:55,208  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:02:55,208  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:03:59,801  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:03:59,801  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:05:20,887  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:05:20,887  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:05:38,607  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:05:38,608  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:05:43,533  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:05:43,534  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:05:45,454  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:05:45,454  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:06:01,375  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:06:01,375  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:06:03,634  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:06:03,634  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:06:13,726  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:06:13,726  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:06:34,918  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:06:34,918  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:06:56,493  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:06:56,493  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:08:10,085  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:08:10,085  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:08:14,644  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:08:14,644  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:10:40,539  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:10:40,539  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:10:49,260  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:10:49,260  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:11:43,266  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:11:43,266  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:11:44,716  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:11:44,717  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:11:50,258  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:11:50,258  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:12:08,346  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:12:08,346  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:12:15,441  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:12:15,441  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:12:35,544  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:12:35,545  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:13:28,929  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:13:28,929  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:13:30,136  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:13:30,136  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:13:33,416  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:13:33,416  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:13:38,152  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:13:38,152  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:13:58,728  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:13:58,728  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:14:08,416  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:14:08,416  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:14:13,264  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:14:13,264  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:14:38,312  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:14:38,312  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:14:50,463  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:14:50,463  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:03,039  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:03,039  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:18,903  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:18,903  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:24,647  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:24,647  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:28,471  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:28,471  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:30,959  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:30,959  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:37,719  WARN [Worker-8] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:37,720  WARN [Worker-8] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:47,615  WARN [Worker-9] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:47,615  WARN [Worker-9] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:53,934  WARN [Worker-7] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:53,934  WARN [Worker-7] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:15:57,767  WARN [Worker-5] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:15:57,767  WARN [Worker-5] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:17:41,694  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:17:41,694  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:17:54,125  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:17:54,125  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:17:58,206  WARN [Worker-3] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:17:58,206  WARN [Worker-3] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:18:10,541  WARN [Worker-1] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:18:10,541  WARN [Worker-1] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:18:36,461  WARN [Worker-4] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:18:36,461  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-14 17:18:43,437  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-14 17:18:43,437  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.

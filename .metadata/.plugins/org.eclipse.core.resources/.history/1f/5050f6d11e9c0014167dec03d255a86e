@@ -1,0 +1,11 @@
+package scala
+
+object Main {
+  def main(Args:Array[String]){
+    var Exam = new Examples() 
+    Exam.test(2)
+    
+    
+    
+  }
+}

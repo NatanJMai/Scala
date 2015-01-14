@@ -1,0 +1,12 @@
+package scala
+
+class Examples {
+  
+  
+  
+  /*  */
+  def justATest(a:Int)= {
+    println(a)
+    
+  }
+}

@@ -1,0 +1,7 @@
+package scala
+
+object Main {
+  def main(Args:Array[String]){
+    println("Hello World!")  
+  }
+}

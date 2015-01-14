@@ -1,0 +1,21 @@
+package scala
+
+
+object Main {
+  def main(Args:Array[String]){
+    var Exp = new Examples() 
+    
+    var aab = {
+        def Fatorials(a:Int):Int = { 
+          if(a == 0) 1 else a * Fatorials(a - 1)
+        }
+        
+        println(Fatorials(3)) 
+    }
+   
+        
+    
+    
+    
+  }
+}

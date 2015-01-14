@@ -1,0 +1,18 @@
+package scala
+
+class Examples {
+  
+  
+  
+  /*  */
+  def JustATest(a:Int)= {
+    println(a)
+    
+  }
+  
+  def IsPrime(a:Int): Boolean = {
+    return false
+    
+  }
+  
+}

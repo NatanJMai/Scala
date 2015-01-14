@@ -1,0 +1,14 @@
+package scala
+
+@author 
+object Main {
+  def main(Args:Array[String]){
+    var Exp = new Examples() 
+    
+    Exp.JustATest(3)
+    
+    
+    
+    
+  }
+}

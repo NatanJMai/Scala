@@ -1,0 +1,27 @@
+package scala
+
+class Examples {
+  
+  
+  
+  /*  */
+  def Fatorial(a:Int)= {
+    if(a == 0) {
+       
+    }
+    
+    
+    
+    
+    
+  }
+  
+  /*  */
+  def IsPrime(a:Int): Boolean = {
+    return false
+    
+  }
+  
+  
+  
+}
