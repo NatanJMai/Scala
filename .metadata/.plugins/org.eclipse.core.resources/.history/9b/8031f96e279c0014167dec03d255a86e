@@ -8,13 +8,14 @@ class Examples {
     
   
   /*  */
-  def IsPrime(a:Int): Boolean = 
+  def IsPrime(a:Int): Boolean = {
     return false
+    
+  }
   
-  /*  */
   def arr(array:Array[Int]){
-    for(x <- 0 to array.length - 1)
-      println(array(x))
+    for(x <- 0 to arr.length - 1)
+      println(arr(x))
     
   }
 }
