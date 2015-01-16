@@ -13,8 +13,8 @@
 
 /**
  * @TODO
- * > Array[String] to the file.
- * > Clean lines.
+ * > Array[String].
+ * > Clean up.
  */
 
 package interpreter
