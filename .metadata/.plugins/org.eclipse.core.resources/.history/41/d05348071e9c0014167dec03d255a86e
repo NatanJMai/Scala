@@ -1,9 +1,0 @@
-package scala
-
-object Main {
-  def main(Args:Array[String]){
-    
-  }
-  
-  
-}

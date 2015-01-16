@@ -474,3 +474,9 @@ Java Model Exception: Java Model Status [Examples does not exist]
 2015-01-14 17:18:36,461  WARN [Worker-4] - ScalaProject - Project Examples runs on platform default installation.
 2015-01-14 17:18:43,437  WARN [Worker-6] - ScalaProject - Project Examples has platform default sourceLevel.
 2015-01-14 17:18:43,437  WARN [Worker-6] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-16 15:50:32,431  WARN [main] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-16 15:50:32,454  WARN [main] - ScalaProject - Project Examples runs on platform default installation.
+2015-01-16 15:56:16,855  WARN [Worker-1] - ScalaProject - Project Interpreter has platform default sourceLevel.
+2015-01-16 15:56:16,856  WARN [Worker-1] - ScalaProject - Project Interpreter runs on platform default installation.
+2015-01-16 15:57:25,800  WARN [Worker-2] - ScalaProject - Project Examples has platform default sourceLevel.
+2015-01-16 15:57:25,800  WARN [Worker-2] - ScalaProject - Project Examples runs on platform default installation.
