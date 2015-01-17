@@ -29,15 +29,17 @@ class Verifications {
   
   def verifyFirstLine(vFile:File):Boolean = {
     
-    if (vFile.arrLine(0) != "@author") 
+    var indexEq:Int = vFile.arrLine(0).indexOf("=") + 1
+    
+    if ((vFile.arrLine(0) != "@author") && (!vFile.arrLine(0).contains("=")))
       return false
     
-    if (vFile.arrLine(1) != "@email")
+    if ((vFile.arrLine(1) != "@email") && (!vFile.arrLine(1).contains("=")))
       return false
     
-    vFile.email  = true
-    vFile.author = true
-      
+    vFile.author = vFile.arrLine(0).substring(indexEq, vFile.arrLine(0).length()).trim()   
+    vFile.email  = vFile.arrLine(1).substring(indexEq, vFile.arrLine(1).length()).trim()
+    
     return true
   }
 }

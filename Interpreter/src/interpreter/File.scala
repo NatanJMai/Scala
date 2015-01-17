@@ -24,8 +24,8 @@ class File {
   var numberLines :Int     = 0
   var nameOfFile  :String  = ""
   var pathFile    :String  = ""
-  var author      :Boolean = false
-  var email       :Boolean = false     
+  var author      :String  = ""
+  var email       :String  = ""     
   var arrLine     = new ArrayBuffer[String] 
   
   def getContent() = {

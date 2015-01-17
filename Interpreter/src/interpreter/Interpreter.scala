@@ -14,8 +14,8 @@
 /**
  * @TODO
  * # Array[String] of file.
- * > Verify 'author' and 'email'
- * >
+ * # Verify 'author' and 'email'
+ * > 
  * >
  * >
  */
@@ -34,8 +34,9 @@ object Interpreter {
     
     nVeri.verifyFirstLine(nFile)
     
-    println(nFile.author)
-    println(nFile.email)
+    println("Name.: " + nFile.author + "\nEmail: " + nFile.email)
+        
+            
     
   }
 }
