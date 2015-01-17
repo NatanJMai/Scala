@@ -34,7 +34,7 @@ object Interpreter {
     
     nVeri.verifyFirstLine(nFile)
     
-    println("Name.: " + nFile.author + "\nEmail: " + nFile.email)
+    println("Name.: " + nFile.author + "\nE-mail: " + nFile.email)
         
             
     
