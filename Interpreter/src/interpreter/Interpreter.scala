@@ -13,8 +13,11 @@
 
 /**
  * @TODO
- * > Array[String].
- * > Clean up.
+ * # Array[String] of file.
+ * > Verify 'author' and 'email'
+ * >
+ * >
+ * >
  */
 
 package interpreter
@@ -24,13 +27,15 @@ import scala.io.Source
 object Interpreter {
   def main(Args:Array[String]){
     var nFile    = new File()
+    var nVeri    = new Verifications()
     
-    nFile.pathFile = "/home/natanjmai/Documents/natan.txt"
+    nFile.pathFile = "/home/natanjmai/Documents/JavaMenosMenos/Fonte/natan.txt"
     nFile.getContent()
-
-    /* Just a test :) */
-    for(vlLine <- nFile.arrLine)
-      println(vlLine)
+    
+    nVeri.verifyFirstLine(nFile)
+    
+    println(nFile.author)
+    println(nFile.email)
     
   }
 }

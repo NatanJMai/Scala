@@ -21,9 +21,11 @@ import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
 class File {
-  var numberLines :Int    = 0
-  var nameOfFile  :String = ""
-  var pathFile    :String = ""
+  var numberLines :Int     = 0
+  var nameOfFile  :String  = ""
+  var pathFile    :String  = ""
+  var author      :Boolean = false
+  var email       :Boolean = false     
   var arrLine     = new ArrayBuffer[String] 
   
   def getContent() = {
@@ -33,6 +35,4 @@ class File {
       
     this.numberLines = this.arrLine.length  
   }
-  
-  
 }
