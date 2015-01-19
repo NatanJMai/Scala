@@ -1,5 +1,5 @@
 /bin/
-/.metadata/
+/.metadata/*
 *.project
 *.settings
 *.cache
