@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+/home/natanjmai/workspace/Scala/.metadata/.plugins/org.eclipse.jdt.core
-1280940650.index
-1556433318.index

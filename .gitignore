@@ -1,7 +1,8 @@
 /bin/
 /.metadata/*
 /.metadata/.plugins/*
-.metadata/*
+.metadata/
+*.core
 *.project
 *.settings
 *.cache

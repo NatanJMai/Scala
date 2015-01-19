@@ -1,8 +1,0 @@
-package scala
-
-class Examples {
-  def test(a:Int)= {
-    println(a)
-    
-  }
-}

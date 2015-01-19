@@ -125,10 +125,11 @@ class Verifications {
           operat.run()
         }
         
+        /*
         for(x <- operat.variables)
           println(x.value)
         
-        println(operat.result)
+        println(operat.result)*/
         
         if (isNumeric(nameFVar)){
           
