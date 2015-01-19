@@ -93,6 +93,10 @@ class Verifications {
     }
   }
   
+/**  
+  *  This function check if exists any operator. 
+  **/
+  
   def containsOperat(vFile:File, line:String, indexEq:Int):String = {
     var indexOp    :Int    = 0
     var nameFVar   :String = ""
