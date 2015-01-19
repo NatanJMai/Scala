@@ -15,8 +15,9 @@
  * @TODO
  * # Array[String] of file.
  * # Verify 'author' and 'email'
- * > 
- * >
+ * > def var
+ * > assign 
+ * > symbols
  * >
  */
 
@@ -29,12 +30,14 @@ object Interpreter {
     var nFile    = new File()
     var nVeri    = new Verifications()
     
-    nFile.pathFile = "/home/natanjmai/Documents/JavaMenosMenos/Fonte/natan.txt"
+    nFile.path = "/home/natanjmai/Documents/JavaMenosMenos/Fonte/natan.txt"
     nFile.getContent()
     
     nVeri.verifyFirstLine(nFile)
+    nVeri.manyOthers(nFile)
     
-    println("Name.: " + nFile.author + "\nE-mail: " + nFile.email)
+    for(x <- nFile.variables)
+      println(x.name, x.value)
         
             
     

@@ -42,4 +42,28 @@ class Verifications {
     
     return true
   }
+
+  def containsDefine(vFile:File, line : String){
+    if (line.contains("def var") && (line.contains("="))){
+      var variable   = new Variable()
+      def indexEql   = line.indexOf("=")   + "=".length()
+      def indexVar   = line.indexOf("var") + "var".length() 
+      
+      variable.name  = line.substring(indexVar, indexEql - 1).trim()
+      variable.value = line.substring(indexEql, line.length()).trim() 
+      
+      vFile.variables += variable  
+    }
+  }
+  
+  def manyOthers(vFile:File) = {
+    
+    /* All lines since the second line. */
+    for(line <- 1 to vFile.arrLine.length - 1){
+      containsDefine(vFile, vFile.arrLine(line))
+    }
+    
+  }
+  
+  
 }
