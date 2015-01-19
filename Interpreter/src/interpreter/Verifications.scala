@@ -93,7 +93,7 @@ class Verifications {
     }
   }
   
-/**  
+/**
   *  This function check if exists any operator. 
   **/
   
@@ -141,6 +141,11 @@ class Verifications {
     return ""
   }
   
+/**
+  * Is Numeric?  
+  * 
+  **/
+  
   def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
   
   def manyOthers(vFile:File) = {
@@ -149,8 +154,5 @@ class Verifications {
       containsDefine(vFile, vFile.arrLine(line))
       containsAssign(vFile, vFile.arrLine(line))
     }
-    
   }
-  
-  
 }
