@@ -36,4 +36,20 @@ class File {
       
     this.lines = this.arrLine.length  
   }
+  
+  def existVariable(varName:String):Boolean = {
+    for (x <- this.variables)
+      if (x.name == varName) return true       
+    
+    return false
+  }
+  
+  def getVariable(varName:String):Variable = {
+    if (existVariable(varName)){
+      for (x <- this.variables)
+        if (x.name == varName) return x
+    }
+    
+    return null 
+  }
 }

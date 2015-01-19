@@ -19,15 +19,16 @@
 package interpreter
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
+import scala.actors.Exit
 
 class Verifications {
   
- /** This function check if the sentences @author 
-   * and @email exists
+ /** This function check if the sentences author 
+   * and email exists
    * These sentences needed are in the first line 
    **/
   
-  def verifyFirstLine(vFile:File):Boolean = {
+  def checkFirstLine(vFile:File):Boolean = {
     
     var indexEq:Int = vFile.arrLine(0).indexOf("=") + 1
     
@@ -51,8 +52,31 @@ class Verifications {
       
       variable.name  = line.substring(indexVar, indexEql - 1).trim()
       variable.value = line.substring(indexEql, line.length()).trim() 
+      variable.use   = true
       
       vFile.variables += variable  
+    }
+  }
+  
+  def containsAssign(vFile:File, line:String){
+    if (line.contains("assign") && (line.contains("="))){
+      var name       : String = ""
+      var value      : String = ""
+      var indexEql   = line.indexOf("=")      + "=".length()
+      var indexAsg   = line.indexOf("assign") + "assign".length()
+      
+      name  = line.substring(indexAsg, indexEql - 1).trim()
+      value = line.substring(indexEql, line.length()).trim()
+      
+      if (!vFile.existVariable(name)){
+        println("Variable not exist!")
+        Exit
+      }
+      
+      var variable = vFile.getVariable(name)
+      variable.setName(name)
+      variable.setValue(value)
+      
     }
   }
   
@@ -61,6 +85,7 @@ class Verifications {
     /* All lines since the second line. */
     for(line <- 1 to vFile.arrLine.length - 1){
       containsDefine(vFile, vFile.arrLine(line))
+      containsAssign(vFile, vFile.arrLine(line))
     }
     
   }

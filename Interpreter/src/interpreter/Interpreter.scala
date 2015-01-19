@@ -15,9 +15,9 @@
  * @TODO
  * # Array[String] of file.
  * # Verify 'author' and 'email'
- * > def var
+ * # def var
  * > assign 
- * > symbols
+ * > small garbage-collector
  * >
  */
 
@@ -33,7 +33,7 @@ object Interpreter {
     nFile.path = "/home/natanjmai/Documents/JavaMenosMenos/Fonte/natan.txt"
     nFile.getContent()
     
-    nVeri.verifyFirstLine(nFile)
+    nVeri.checkFirstLine(nFile)
     nVeri.manyOthers(nFile)
     
     for(x <- nFile.variables)

@@ -23,6 +23,15 @@ package interpreter
  *
  */
 class Variable {
-  var name   : String = ""
-  var value  : String = ""
+  var name   : String  = ""
+  var value  : String  = ""
+  var use    : Boolean = false
+  
+  def setValue(newValue : String) = {
+    this.value = newValue
+  }
+  
+  def setName(newName : String) = {
+    this.name = newName
+  } 
 }
