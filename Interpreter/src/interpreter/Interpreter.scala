@@ -31,7 +31,7 @@ object Interpreter {
     var nFile    = new File()
     var nVeri    = new Verifications()
     
-    nFile.path = "/home/natanjmai/Documents/JavaMenosMenos/Fonte/natan.txt"
+    nFile.path = "/home/natanjmai/Documents/natan.txt"
     nFile.getContent()
     
     nVeri.checkFirstLine(nFile)

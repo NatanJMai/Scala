@@ -117,7 +117,7 @@ class Verifications {
           }
           
           if (vFile.existVariable(nameSVar)){
-            var variable = vFile.getVariable(nameFVar)
+            var variable = vFile.getVariable(nameSVar)
             
             operat.variables += variable
           }
@@ -125,11 +125,10 @@ class Verifications {
           operat.run()
         }
         
-        /*
         for(x <- operat.variables)
           println(x.value)
         
-        println(operat.result)*/
+        println(operat.result)
         
         if (isNumeric(nameFVar)){
           
