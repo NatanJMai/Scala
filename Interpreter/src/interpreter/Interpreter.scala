@@ -16,7 +16,8 @@
  * # Array[String] of file.
  * # Verify 'author' and 'email'
  * # def var
- * > assign 
+ * # assign 
+ * > +, -, ^, *, and / operators 
  * > small garbage-collector
  * >
  */
@@ -36,10 +37,11 @@ object Interpreter {
     nVeri.checkFirstLine(nFile)
     nVeri.manyOthers(nFile)
     
-    for(x <- nFile.variables)
+    /*for(x <- nFile.variables)
       println(x.name, x.value)
         
-            
+    for(y <- nFile.arrOperations)
+      println(y.typeOP)*/        
     
   }
 }

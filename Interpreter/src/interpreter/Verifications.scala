@@ -44,6 +44,11 @@ class Verifications {
     return true
   }
 
+/** 
+  *  This function check if the sentence "def var" exist. 
+  *  If exist, is created a new variable. 
+  **/
+  
   def containsDefine(vFile:File, line : String){
     if (line.contains("def var") && (line.contains("="))){
       var variable   = new Variable()
@@ -57,6 +62,11 @@ class Verifications {
       vFile.variables += variable  
     }
   }
+  
+/** 
+  *  This function check if the sentence "assign" exist. 
+  *  If exist, is assigned a new valor to the variable. 
+  **/
   
   def containsAssign(vFile:File, line:String){
     if (line.contains("assign") && (line.contains("="))){
@@ -75,13 +85,61 @@ class Verifications {
       
       var variable = vFile.getVariable(name)
       variable.setName(name)
-      variable.setValue(value)
+      
+      containsOperat(vFile, line, indexEql)
+      
+      //variable.setValue(value)
       
     }
   }
   
-  def manyOthers(vFile:File) = {
+  def containsOperat(vFile:File, line:String, indexEq:Int):String = {
+    var indexOp    :Int    = 0
+    var nameFVar   :String = ""
+    var nameSVar   :String = ""
+    var operation          = new Operation()
     
+    for (operat <- vFile.arrOperations){
+      if (line.contains(operat.typeOP)){
+        indexOp   = line.indexOf(operat.typeOP)
+        nameFVar  = line.substring(indexEq, indexOp).trim()
+        nameSVar  = line.substring(indexOp + 1, line.length()).trim()
+        
+        if (vFile.existVariable(nameFVar) || (vFile.existVariable(nameSVar))){
+          if (vFile.existVariable(nameFVar)){
+            var variable = vFile.getVariable(nameFVar)
+            
+            operat.variables += variable
+          }
+          
+          if (vFile.existVariable(nameSVar)){
+            var variable = vFile.getVariable(nameFVar)
+            
+            operat.variables += variable
+          }
+          
+          operat.run()
+        }
+        
+        for(x <- operat.variables)
+          println(x.value)
+        
+        println(operat.result)
+        
+        if (isNumeric(nameFVar)){
+          
+        }
+      }
+    }
+    
+    println(nameFVar, nameSVar)
+    
+    return ""
+  }
+  
+  def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
+  
+  def manyOthers(vFile:File) = {
     /* All lines since the second line. */
     for(line <- 1 to vFile.arrLine.length - 1){
       containsDefine(vFile, vFile.arrLine(line))
