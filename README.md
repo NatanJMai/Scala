@@ -10,7 +10,7 @@ Just a simple interpreter, but only to knowledge.
 	@email  =  natan.mai@hotmail.com
 
 	def var one   = 1
-	def var four  = 5
+	def var four  = 4
 	def var two   = three
 
 	assign two    = one + four	
