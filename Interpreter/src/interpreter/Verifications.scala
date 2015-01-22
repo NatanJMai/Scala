@@ -70,8 +70,10 @@ class Verifications {
   
   def containsAssign(vFile:File, line:String){
     if (line.contains("assign") && (line.contains("="))){
-      var name       : String = ""
-      var value      : String = ""
+      var name       : String    = ""
+      var value      : String    = ""
+      var variable   : Variable  = null      
+      var operation  : Operation = null
       var indexEql   = line.indexOf("=")      + "=".length()
       var indexAsg   = line.indexOf("assign") + "assign".length()
       
@@ -79,73 +81,19 @@ class Verifications {
       value = line.substring(indexEql, line.length()).trim()
       
       if (!vFile.existVariable(name)){
-        println("Variable not exist!")
+        println("Variable " + name + " not exist!")
         Exit
       }
       
-      var variable = vFile.getVariable(name)
+      variable = vFile.getVariable(name)
       variable.setName(name)
       
-      containsOperat(vFile, line, indexEql)
+      operation = new Operation()
+      operation.run(vFile, line)
       
-      //variable.setValue(value)
+      println(operation.result)
       
     }
-  }
-  
-/**
-  *  This function check if exists any operator. 
-  **/
-  
-  def containsOperat(vFile:File, line:String, indexEq:Int):String = {
-    var indexOp    :Int    = 0
-    var nameFVar   :String = ""
-    var nameSVar   :String = ""
-    var operation          = new Operation()
-    
-    for (operat <- vFile.arrOperations){
-      if (line.contains(operat.typeOP)){
-        var variable : Variable = null
-        indexOp      = line.indexOf(operat.typeOP)
-        nameFVar     = line.substring(indexEq, indexOp).trim()
-        nameSVar     = line.substring(indexOp + 1, line.length()).trim()
-        
-        if (!isNumeric(nameFVar) || (!isNumeric(nameSVar))){
-          if (vFile.existVariable(nameFVar)){
-            variable = vFile.getVariable(nameFVar)
-            
-            operat.variables += variable
-          }
-          
-          if (vFile.existVariable(nameSVar)){
-            var variable = vFile.getVariable(nameSVar)
-            
-            operat.variables += variable
-          }
-          
-          operat.run()
-          
-          //println(operat.result)
-        }
-        else {        
-          variable       = new Variable()
-          variable.name  = ""
- 
-          variable.value    = nameFVar
-          operat.variables += variable
-        
-          variable.value    = nameSVar
-          operat.variables += variable
-          
-          operat.run()
-          //println(operat.result)
-        }
-      }
-    }
-    
-    //println(nameFVar, nameSVar)
-    
-    return ""
   }
  
   def lowerCase(vFile:File) = {

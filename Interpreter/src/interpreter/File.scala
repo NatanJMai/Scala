@@ -28,20 +28,10 @@ class File {
   var email          :String  = ""     
   var arrLine        = new ArrayBuffer[String] 
   var variables      = new ArrayBuffer[Variable]
-  var arrOperations  = new ArrayBuffer[Operation]()
   
   def getContent() = {
-    var operations = Array("+", "-", "*", "^", "/")
-    
     for(vcLine <- Source.fromFile(this.path).getLines())
       this.arrLine += vcLine
-    
-    for(vcOper <- operations){
-      var newOperat  = new Operation()
-      newOperat.typeOP = vcOper
-      
-      this.arrOperations += newOperat
-    }
       
     this.lines = this.arrLine.length  
   }
@@ -66,23 +56,60 @@ class File {
       for (x <- this.variables)
         if (x.name == varName) return x
     }
-    
+  
     return null 
   }
   
-  def existOperation(varOp:String):Boolean = {
-    for (x <- this.arrOperations)
-      if(x.typeOP == varOp) return true    
-    
-    return false
-  }
+  def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
   
-  def getOperation(varOp:String):Operation = {
-    if (existOperation(varOp)){
-      for (x <- this.arrOperations)
-        if(x.typeOP == varOp) return x            
+  def getListVariable(vLine:String, operat:String):ArrayBuffer[Variable] = {
+    var variab = new ArrayBuffer[Variable]
+    var indexOp    :Int    = 0
+    var indexEq    :Int    = 0
+    var nameFVar   :String = ""
+    var nameSVar   :String = ""
+    
+    var variable : Variable = null
+    
+    indexOp      = vLine.indexOf(operat)
+    indexEq      = vLine.indexOf("=") + 1
+    nameFVar     = vLine.substring(indexEq, indexOp).trim()
+    nameSVar     = vLine.substring(indexOp + 1, vLine.length()).trim()
+    
+    if (!isNumeric(nameFVar)){
+      if (existVariable(nameFVar))
+        variable = getVariable(nameFVar)
+            
+      else{
+          //ERROR
+      }
+    }
+        
+    else{
+      variable       = new Variable()
+      variable.name  = ""
+      variable.value = nameFVar
     }
     
-    return null
+    variab += variable
+    
+    if (!isNumeric(nameSVar)){
+      if (existVariable(nameSVar))
+        variable = getVariable(nameSVar)
+        
+      else{
+        //ERROR
+      }
+    }
+    
+    else{
+      variable       = new Variable()
+      variable.name  = ""
+      variable.value = nameSVar
+    }    
+
+    variab += variable
+    
+    return variab
   }
 }

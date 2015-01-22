@@ -27,38 +27,82 @@ import scala.collection.mutable.ArrayBuffer
 class Operation {
   var typeOP    : String = ""
   var result    : Double = 0.0
-  var variables = new ArrayBuffer[Variable]()
+  var variables = new ArrayBuffer[Variable]
   
-  def run(){
-    if (this.typeOP == "+") sum()
-    else if (this.typeOP == "-") less()
-    else if (this.typeOP == "/") division()
-    else if (this.typeOP == "^") exponential()
-    else if (this.typeOP == "*") multiplication()
+  def run(vFile: File, line:String)= {
+         if (line.contains("+")) sum(vFile, line)
+    else if (line.contains("-")) less(vFile, line)
+    else if (line.contains("/")) division(vFile, line)
+    //else if (line.contains("^")) exponential(vFile, line)
+    else if (line.contains("*")) multiplication(vFile, line)
+
   }
   
-  def valueString(stri:String):Double = {
-    return stri.toDouble
-  }
-  
-  def sum(){
+  def sum(vFile: File, vLine:String) = {
     var sum:Double = 0
+    println(vLine)
+    this.variables = vFile.getListVariable(vLine, "+")
     
-    for (x <- this.variables){
-      sum += valueString(x.value)
-      println(sum)  
-    }
-    
+    for(vari <- 0 to this.variables.length - 1)
+      if(vFile.isNumeric(this.variables(vari).value))
+        sum += valueString(this.variables(vari).value)
+
+    this.typeOP = "+"
     this.result = sum
   }
+
+  def less(vFile:File, vLine:String) = {
+    var less:Double = 0
+    println(vLine)
+    this.variables = vFile.getListVariable(vLine, "-")
+    
+    for(vari <- 0 to this.variables.length - 1)
+      if(vFile.isNumeric(this.variables(vari).value))
+        less -= valueString(this.variables(vari).value)
+
+    this.typeOP = "-"
+    this.result = less
+  }
   
-  def less(){}
+  def division(vFile:File, vLine:String) = {
+    var div:Double = 0
+    println(vLine)
+    this.variables = vFile.getListVariable(vLine, "/")
+    
+    for(vari <- 0 to this.variables.length - 2)
+      if(vFile.isNumeric(this.variables(vari).value))
+        div = valueString(this.variables(vari).value) / valueString(this.variables(vari + 1).value) 
+
+    this.typeOP = "/"
+    this.result = div
+  }
   
-  def division(){}
+  /*def exponential(vFile:File, vLine:String) = {
+    var exp:Double = 0
+    println(vLine)
+    this.variables = vFile.getListVariable(vLine, "^")
+    
+    for(vari <- 0 to this.variables.length - 1)
+      if(vFile.isNumeric(this.variables(vari).value))
+        exp += valueString(this.variables(vari).value)
+
+    this.typeOP = "+"
+    this.result = sum
+    
+  }*/
   
-  def exponential(){}
+  def multiplication(vFile:File, vLine:String) = {
+    var mult:Double = 1
+    println(vLine)
+    this.variables = vFile.getListVariable(vLine, "*")
+    
+    for(vari <- 0 to this.variables.length - 1)
+      if(vFile.isNumeric(this.variables(vari).value))
+        mult = valueString(this.variables(vari).value) * mult
+
+    this.typeOP = "*"
+    this.result = mult
+  }
   
-  def multiplication(){}
-  
-  
+  def valueString(stri:String):Double = {return stri.toDouble}
 }
