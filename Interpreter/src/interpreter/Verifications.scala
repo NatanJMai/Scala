@@ -105,13 +105,14 @@ class Verifications {
     
     for (operat <- vFile.arrOperations){
       if (line.contains(operat.typeOP)){
-        indexOp   = line.indexOf(operat.typeOP)
-        nameFVar  = line.substring(indexEq, indexOp).trim()
-        nameSVar  = line.substring(indexOp + 1, line.length()).trim()
+        var variable : Variable = null
+        indexOp      = line.indexOf(operat.typeOP)
+        nameFVar     = line.substring(indexEq, indexOp).trim()
+        nameSVar     = line.substring(indexOp + 1, line.length()).trim()
         
-        if (vFile.existVariable(nameFVar) || (vFile.existVariable(nameSVar))){
+        if (!isNumeric(nameFVar) || (!isNumeric(nameSVar))){
           if (vFile.existVariable(nameFVar)){
-            var variable = vFile.getVariable(nameFVar)
+            variable = vFile.getVariable(nameFVar)
             
             operat.variables += variable
           }
@@ -123,22 +124,33 @@ class Verifications {
           }
           
           operat.run()
-        }
-        
-        for(x <- operat.variables)
-          println(x.value)
-        
-        println(operat.result)
-        
-        if (isNumeric(nameFVar)){
           
+          //println(operat.result)
+        }
+        else {        
+          variable       = new Variable()
+          variable.name  = ""
+ 
+          variable.value    = nameFVar
+          operat.variables += variable
+        
+          variable.value    = nameSVar
+          operat.variables += variable
+          
+          operat.run()
+          //println(operat.result)
         }
       }
     }
     
-    println(nameFVar, nameSVar)
+    //println(nameFVar, nameSVar)
     
     return ""
+  }
+ 
+  def lowerCase(vFile:File) = {
+    for (str <- 0 to vFile.arrLine.length - 1)
+      vFile.arrLine(str) = vFile.arrLine(str).toLowerCase()
   }
   
 /**
@@ -149,6 +161,8 @@ class Verifications {
   def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
   
   def manyOthers(vFile:File) = {
+    lowerCase(vFile)
+    
     /* All lines since the second line. */
     for(line <- 1 to vFile.arrLine.length - 1){
       containsDefine(vFile, vFile.arrLine(line))

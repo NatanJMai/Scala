@@ -44,9 +44,11 @@ class Operation {
   def sum(){
     var sum:Double = 0
     
-    for (x <- this.variables)
+    for (x <- this.variables){
       sum += valueString(x.value)
-      
+      println(sum)  
+    }
+    
     this.result = sum
   }
   
