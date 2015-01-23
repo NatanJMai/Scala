@@ -33,14 +33,13 @@ class Operation {
          if (line.contains("+")) sum(vFile, line)
     else if (line.contains("-")) less(vFile, line)
     else if (line.contains("/")) division(vFile, line)
-    //else if (line.contains("^")) exponential(vFile, line)
+    else if (line.contains("^")) exponential(vFile, line)
     else if (line.contains("*")) multiplication(vFile, line)
 
   }
   
   def sum(vFile: File, vLine:String) = {
     var sum:Double = 0
-    println(vLine)
     this.variables = vFile.getListVariable(vLine, "+")
     
     for(vari <- 0 to this.variables.length - 1)
@@ -53,12 +52,11 @@ class Operation {
 
   def less(vFile:File, vLine:String) = {
     var less:Double = 0
-    println(vLine)
     this.variables = vFile.getListVariable(vLine, "-")
     
-    for(vari <- 0 to this.variables.length - 1)
+    for(vari <- 0 to this.variables.length - 2)
       if(vFile.isNumeric(this.variables(vari).value))
-        less -= valueString(this.variables(vari).value)
+        less = valueString(this.variables(vari).value) - valueString(this.variables(vari + 1).value)
 
     this.typeOP = "-"
     this.result = less
@@ -66,7 +64,6 @@ class Operation {
   
   def division(vFile:File, vLine:String) = {
     var div:Double = 0
-    println(vLine)
     this.variables = vFile.getListVariable(vLine, "/")
     
     for(vari <- 0 to this.variables.length - 2)
@@ -77,23 +74,34 @@ class Operation {
     this.result = div
   }
   
-  /*def exponential(vFile:File, vLine:String) = {
+  def exponential(vFile:File, vLine:String) = {
     var exp:Double = 0
     println(vLine)
     this.variables = vFile.getListVariable(vLine, "^")
     
-    for(vari <- 0 to this.variables.length - 1)
-      if(vFile.isNumeric(this.variables(vari).value))
-        exp += valueString(this.variables(vari).value)
+    for(vari <- 0 to this.variables.length - 2)
+      if(vFile.isNumeric(this.variables(vari).value)){
+        exp = {
+          var sum   :Double = 1
+          var exp   :Double = valueString(this.variables(vari + 1).value)
+          var number:Double = valueString(this.variables(vari).value)
+                    
+          while(exp > 0){
+            sum = sum * number
+            exp = exp - 1
+          }
+          
+          sum
+        }
+      }
 
-    this.typeOP = "+"
-    this.result = sum
+    this.typeOP = "^"
+    this.result = exp
     
-  }*/
+  }
   
   def multiplication(vFile:File, vLine:String) = {
     var mult:Double = 1
-    println(vLine)
     this.variables = vFile.getListVariable(vLine, "*")
     
     for(vari <- 0 to this.variables.length - 1)

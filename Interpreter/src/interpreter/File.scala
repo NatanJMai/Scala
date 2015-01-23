@@ -20,10 +20,10 @@ package interpreter
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
-class File {
+class File(pathF:String){
   var lines          :Int     = 0
   var name           :String  = ""
-  var path           :String  = ""
+  var path           :String  = pathF
   var author         :String  = ""
   var email          :String  = ""     
   var arrLine        = new ArrayBuffer[String] 
