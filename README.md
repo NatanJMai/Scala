@@ -13,6 +13,7 @@ Just a simple interpreter, but only to knowledge.
 	def var two    = 2
 	def var three  = 3
 	def var aux    = 0
+	def var name   = natan
 
 	assign aux  = one + 10
 	assign aux  = one + two
@@ -34,7 +35,7 @@ Just a simple interpreter, but only to knowledge.
 	assign aux  = 20 ^ 4
 	assign aux  = 20 ^ 20
 
-
+	disp My Name Is = : name
 
 - natan.mai@hotmail.com
 - natanmai2@gmail.com
