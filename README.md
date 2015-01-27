@@ -29,9 +29,9 @@ Just a simple interpreter, but only to knowledge.
 
 *Results:*
 
- - [x] 11.0
- - [x] 2.0
- - [x] 0.05
+ - [x] Value aux1 is 11.0
+ - [x] Value aux2 is 2.0
+ - [x] Value aux3 is 0.05
  - [x] My name is natan
 
  natan.mai@hotmail.com
