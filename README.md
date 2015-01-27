@@ -34,6 +34,7 @@ Just a simple interpreter, but only to knowledge.
  - [x] Value aux3 is 0.05
  - [x] My name is natan
 
- natan.mai@hotmail.com
- natanmai2@gmail.com
- natanjmai at freenode.
+
+| natan.mai@hotmail.com 
+| natanmai2@gmail.com   
+| natanjmai at freenode. 
