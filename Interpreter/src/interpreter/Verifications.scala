@@ -91,7 +91,7 @@ class Verifications {
       operation = new Operation()
       operation.run(vFile, line)
       
-      println(operation.result)
+      variable.setValue(operation.result.toString())
       
     }
   }

@@ -35,11 +35,12 @@ Just a simple interpreter, but only to knowledge.
 	assign aux  = 20 ^ 4
 	assign aux  = 20 ^ 20
 
-	disp My Name Is = : name
-
+	disp My Name Is    : name  #
+	disp Value aux1 is : aux1  #
 Results: 11.0; 3.0; 21.0; -9.0; -1.0; -19.0; 10.0; 2.0; 20.0; 0.1; 0.5; 0.05; 
 
-My name is = natan
+[x] My name is natan
+[x] Value aux1 is 0.1
 
 - natan.mai@hotmail.com
 - natanmai2@gmail.com
