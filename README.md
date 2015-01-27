@@ -37,11 +37,15 @@ Just a simple interpreter, but only to knowledge.
 
 	disp My Name Is    : name  #
 	disp Value aux1 is : aux1  #
-Results: 11.0; 3.0; 21.0; -9.0; -1.0; -19.0; 10.0; 2.0; 20.0; 0.1; 0.5; 0.05; 
 
-[x] My name is natan
-[x] Value aux1 is 0.1
+*Results:*
 
-- natan.mai@hotmail.com
-- natanmai2@gmail.com
-- natanjmai at freenode.
+ - [x] 11.0
+ - [x] 2.0
+ - [x] 0.05
+ - [x] My name is natan
+  
+
+ natan.mai@hotmail.com
+ natanmai2@gmail.com
+ natanjmai at freenode.
