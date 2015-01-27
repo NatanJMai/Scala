@@ -11,19 +11,9 @@
  * \************************************************************
  */
 
-/**
- * @TODO
- *
- *
- */
 package interpreter
-
 import scala.collection.mutable.ArrayBuffer
 
-/**
- * @author natanjmai
- *
- */
 class Operation {
   var typeOP    : String = ""
   var result    : Double = 0.0
@@ -35,8 +25,12 @@ class Operation {
     else if (line.contains("/")) division(vFile, line)
     else if (line.contains("^")) exponential(vFile, line)
     else if (line.contains("*")) multiplication(vFile, line)
-
   }
+  
+/**
+ * @author natanjmai
+ *
+ */
   
   def sum(vFile: File, vLine:String) = {
     var sum:Double = 0
@@ -49,7 +43,12 @@ class Operation {
     this.typeOP = "+"
     this.result = sum
   }
-
+  
+/**
+ * @author natanjmai
+ *
+ */
+  
   def less(vFile:File, vLine:String) = {
     var less:Double = 0
     this.variables = vFile.getListVariable(vLine, "-")
@@ -61,6 +60,11 @@ class Operation {
     this.typeOP = "-"
     this.result = less
   }
+
+/**
+ * @author natanjmai
+ *
+ */  
   
   def division(vFile:File, vLine:String) = {
     var div:Double = 0
@@ -73,6 +77,11 @@ class Operation {
     this.typeOP = "/"
     this.result = div
   }
+
+/**
+ * @author natanjmai
+ *
+ */  
   
   def exponential(vFile:File, vLine:String) = {
     var exp:Double = 0
@@ -97,8 +106,12 @@ class Operation {
 
     this.typeOP = "^"
     this.result = exp
-    
   }
+
+/**
+ * @author natanjmai
+ *
+ */  
   
   def multiplication(vFile:File, vLine:String) = {
     var mult:Double = 1
@@ -111,6 +124,11 @@ class Operation {
     this.typeOP = "*"
     this.result = mult
   }
+
+/**
+ * @author natanjmai
+ *
+ */  
   
   def valueString(stri:String):Double = {return stri.toDouble}
 }

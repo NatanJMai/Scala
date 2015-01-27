@@ -52,15 +52,42 @@ class File(pathF:String){
   **/
   
   def getVariable(varName:String):Variable = {
-    if (existVariable(varName)){
+    if (existVariable(varName))
       for (x <- this.variables)
-        if (x.name == varName) return x
-    }
+        if (x.name == varName) 
+          return x
   
     return null 
   }
   
   def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
+  
+  def getNumberOfOperators(vLine:String, operat:Char):Int = {
+    var number : Int = 0
+    
+    for(x <- vLine.toLowerCase().toCharArray())
+      if(x == operat)
+        number = number + 1
+    
+    return number
+  }
+  
+  def getNumberOfVar(vLine:String, operat:String):Int = {
+    var number  : Int    = 0
+    var indexEq : Int    = 0
+    var linex   : String = ""
+    
+    linex   = vLine.toLowerCase()
+    indexEq = linex.indexOf("=")    
+    
+    for(x <- linex.toCharArray())
+      print(x)
+    
+    //println(linex.substring(indexEq))   
+    
+    
+    return 0
+  }
   
   def getListVariable(vLine:String, operat:String):ArrayBuffer[Variable] = {
     var variab = new ArrayBuffer[Variable]

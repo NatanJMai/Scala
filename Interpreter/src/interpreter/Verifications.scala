@@ -96,6 +96,13 @@ class Verifications {
     }
   }
  
+  def containsDisplay(vFile:File, line:String){
+    if (line.contains("disp") && line.contains("#")){
+      var disp = new Display(line.replaceFirst("disp", "").trim())
+      disp.display(vFile)
+    }
+  } 
+  
   def lowerCase(vFile:File) = {
     for (str <- 0 to vFile.arrLine.length - 1)
       vFile.arrLine(str) = vFile.arrLine(str).toLowerCase()
@@ -115,6 +122,7 @@ class Verifications {
     for(line <- 1 to vFile.arrLine.length - 1){
       containsDefine(vFile, vFile.arrLine(line))
       containsAssign(vFile, vFile.arrLine(line))
+      containsDisplay(vFile, vFile.arrLine(line))
     }
   }
 }
