@@ -34,7 +34,7 @@ object Interpreter {
     nFile.getContent()
     
     nVeri.checkFirstLine(nFile)
-    nVeri.manyOthers(nFile)
+    nVeri.mainChecks(nFile)
     
   }
 }

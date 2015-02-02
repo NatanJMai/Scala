@@ -9,10 +9,10 @@ Just a simple interpreter, but only to knowledge.
 	@author =  natanjmai
 	@email  =  natan.mai@hotmail.com
 
-	def var one   = 1
+	def var one    = 1
 	def var two    = 2
-	def var three   = 3
-	def var name  = natan
+	def var three  = 3
+	def var name   = natan
 	
 	def var aux1  = 0
 	def var aux2  = 0

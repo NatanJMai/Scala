@@ -115,14 +115,20 @@ class Verifications {
   
   def isNumeric(nameVar: String): Boolean = nameVar.forall(_.isDigit)
   
-  def manyOthers(vFile:File) = {
+  def verifyLines(vFile:File) = {
+    for(vLine <- vFile.arrLine){
+      if (!vLine.contains("&")){
+        containsDefine(vFile, vLine)
+        containsAssign(vFile, vLine)
+        containsDisplay(vFile, vLine)
+      }
+      println(vLine)
+    }
+  }
+  
+  def mainChecks(vFile:File) = {
     lowerCase(vFile)
     
-    /* All lines since the second line. */
-    for(line <- 1 to vFile.arrLine.length - 1){
-      containsDefine(vFile, vFile.arrLine(line))
-      containsAssign(vFile, vFile.arrLine(line))
-      containsDisplay(vFile, vFile.arrLine(line))
-    }
+    verifyLines(vFile)
   }
 }
