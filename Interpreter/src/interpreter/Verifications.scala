@@ -103,6 +103,15 @@ class Verifications {
     }
   } 
   
+  def containsSystem(vFile:File, line:String){
+    
+    
+    
+    
+    
+    
+  }
+  
   def lowerCase(vFile:File) = {
     for (str <- 0 to vFile.arrLine.length - 1)
       vFile.arrLine(str) = vFile.arrLine(str).toLowerCase()
@@ -121,8 +130,8 @@ class Verifications {
         containsDefine(vFile, vLine)
         containsAssign(vFile, vLine)
         containsDisplay(vFile, vLine)
+        containsSystem(vFile, vLine)
       }
-      println(vLine)
     }
   }
   
