@@ -104,7 +104,10 @@ class Verifications {
   } 
   
   def containsSystem(vFile:File, line:String){
-    
+    if (line.contains("sys_")){
+      var system = new System(line)
+      system.run(vFile)
+    }
     
     
     
@@ -113,8 +116,8 @@ class Verifications {
   }
   
   def lowerCase(vFile:File) = {
-    for (str <- 0 to vFile.arrLine.length - 1)
-      vFile.arrLine(str) = vFile.arrLine(str).toLowerCase()
+    //for (str <- 0 to vFile.arrLine.length - 1)
+      //vFile.arrLine(str) = vFile.arrLine(str).toLowerCase()
   }
   
 /**
