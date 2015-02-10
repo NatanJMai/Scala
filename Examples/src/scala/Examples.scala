@@ -17,4 +17,8 @@ class Examples {
       println(array(x))
     
   }
+  
+  def sum(f: Int => Int, a: Int, b: Int): Int = {
+    f(a) + sum(f, a + 1, b)
+  }
 }
